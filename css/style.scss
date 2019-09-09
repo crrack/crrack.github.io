@@ -1,0 +1,102 @@
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  &-nav {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    span {
+      background: #ccc;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 .125%;
+      width: 20px;
+      height: 20px;
+      &.active {
+        background: #fff;
+      }
+    }
+  }
+  &-move {
+    .prev , .next {
+      cursor: pointer;
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      z-index: 3;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+      }
+      &:before {
+        background: linear-gradient(to top, #cccccc 0%, #cccccc 10%, rgba(51, 51, 51, 0) 10%),
+                    linear-gradient(to left, #cccccc 0%, #cccccc 10%, rgba(51, 51, 51, 0) 10%);
+        width: 60%;
+        height: 60%;
+        top: 20%;
+      }
+    }
+    .prev {
+      left: 2%;
+      &:before {
+        left: 35%;
+        top: 20%;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+    .next {
+      right: 2%;
+      &:before {
+        left: 10%;
+        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+      }
+    }
+  }
+  &-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    text-align: center;
+    opacity: 0;
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      max-height: 400px;
+    }
+    &.active {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  &-description {
+    position: absolute;
+    z-index: 4;
+    bottom: 0px;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.25);
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+  }
+}

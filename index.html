@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Carousel demo</title>
+  <link rel="stylesheet" href="css/style.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="carousel">
+		<div class="carousel-nav">
+			<span class="change-carousel active" data-value="1"></span>
+			<span class="change-carousel" data-value="2"></span>
+			<span class="change-carousel" data-value="3"></span>
+			<span class="change-carousel" data-value="4"></span>
+    </div>
+		<div class="carousel-move">
+			<div class="change-carousel prev" data-value="4"></div> <!-- NATVRDO ZADANÝ POČET -->
+		  <div class="change-carousel next" data-value="2"></div>
+		</div>
+		<div class="carousel-items">
+			<div class="carousel-item active">
+				<a href="http://example.com/2">
+          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
+          <div class="carousel__description">
+            Banner description 1
+          </div>
+        </a>
+			</div>
+			<div class="carousel-item">
+				<a href="http://example.com">
+          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
+          <div class="carousel__description">
+            Banner description 2
+          </div>
+        </a>
+			</div>
+			<div class="carousel-item">
+				<a href="http://example.com">
+          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
+          <div class="carousel__description">
+            Banner description 3
+          </div>
+        </a>
+			</div>
+			<div class="carousel-item">
+				<a href="http://example.com">
+          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
+          <div class="carousel__description">
+            Banner description 4
+          </div>
+        </a>
+			</div>
+		</div>
+  </div>
+
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
