@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SK BESKYD Frenštát p.R.</title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-title">
+            SK BESKYD Frenštát p.R.
+            <svg class="mobile-menu-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+        </div>
+        <nav class="desktop-menu">
+            <a href="../index.html">Novinky</a>
+            <a href="../rozvrh.html">Rozvrh</a>
+            <a href="../oddily.html">Oddíly</a>
+            <a href="../historie.html">Historie</a>
+            <a href="../kontakt.html">Kontakt</a>
+        </nav>
+        <nav class="mobile-menu">
+            <a href="../index.html">Novinky</a>
+            <a href="../rozvrh.html">Rozvrh</a>
+            <a href="../oddily.html">Oddíly</a>
+            <a href="../historie.html">Historie</a>
+            <a href="../kontakt.html">Kontakt</a>
+            <svg class="mobile-menu-close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </nav>
+        <main>
+            <h1 class="">
+                Článek 4
+            </h1>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam neque. Integer malesuada. Quisque tincidunt scelerisque libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Pellentesque sapien. Praesent id justo in neque elementum ultrices. Etiam dictum tincidunt diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Mauris tincidunt sem sed arcu. Nam quis nulla. Ut tempus purus at lorem. Duis risus. Vestibulum fermentum tortor id mi. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim.
+                <br><br>
+                Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Aliquam erat volutpat. Praesent in mauris eu tortor porttitor accumsan. Ut tempus purus at lorem. Integer vulputate sem a nibh rutrum consequat. Etiam quis quam. Nulla quis diam. Quisque tincidunt scelerisque libero. Etiam posuere lacus quis dolor. Aliquam erat volutpat. Aenean fermentum risus id tortor. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                <br><br>
+            </div>
+        </main>
+        <script type="text/javascript">
+            document.getElementsByClassName("mobile-menu-open")[0].addEventListener("click", function(){
+                document.getElementsByClassName("mobile-menu")[0].classList.add("mobile-menu-show");
+            });
+            document.getElementsByClassName("mobile-menu-close")[0].addEventListener("click", function(){
+                document.getElementsByClassName("mobile-menu")[0].classList.remove("mobile-menu-show");
+            });
+        </script>
+    </body>
+</html>

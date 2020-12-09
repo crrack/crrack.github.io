@@ -1,63 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SK BESKYD Frenštát p.R.</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-title">
+            SK BESKYD Frenštát p.R.
+            <svg class="mobile-menu-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+        </div>
+        <nav class="desktop-menu">
+            <a href="index.html">Novinky</a>
+            <a href="rozvrh.html">Rozvrh</a>
+            <a href="oddily.html">Oddíly</a>
+            <a href="historie.html">Historie</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <nav class="mobile-menu">
+            <a href="index.html">Novinky</a>
+            <a href="rozvrh.html">Rozvrh</a>
+            <a href="oddily.html">Oddíly</a>
+            <a href="historie.html">Historie</a>
+            <a href="kontakt.html">Kontakt</a>
+            <svg class="mobile-menu-close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </nav>
+        <main>
+            <h1 class="">
+                Domovská stránka
+            </h1>
+            <div class="homepage-header">
+                <div class="">
+                    Sportem k lepšímu životu
+                    <p>Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Praesent id justo in neque elementum ultrices. Curabitur ligula sapien, pulvinar a vestibulum quis.</p>
+                </div>
+                <div class="">
+                    <img src="https://lh3.googleusercontent.com/proxy/hqzoA57nAFUMy3wGLJ9hCGW5TDH_FtQLJPoVzA28gyXTXOOkULJSBte54E_xAB3ati4Hn5KBKtmVtxrVNroXJcQc4HYOwt2WkuO8Io-WFyFL0I4G_w" alt="" width="300px">
+                </div>
+            </div>
+            <div class="homepage">
+                <div class="posts">
+                    <a href="clanek/1.html" class="post-preview">
+                        <h2>Nadpis Článku</h2>
+                        <p>Text příspěvku. Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů).</p>
+                    </a>
+                    <a href="clanek/2.html" class="post-preview">
+                        <h2>Nadpis Článku 2</h2>
+                        <p>Text příspěvku. Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů).</p>
+                    </a>
+                    <a href="clanek/3.html" class="post-preview">
+                        <h2>Nadpis Článku 3</h2>
+                        <p>Text příspěvku. Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů).</p>
+                    </a>
+                    <a href="prispevky.html" class="posts-more">Všechny příspěvky</a>
+                </div>
+                <div class="sidebar">
+                    <div>
+                        <h3>Členské příspěvky</h3>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>přípravka</td><td class="text-right">1000 kč</td>
+                            </tr>
+                            <tr class="flex justify-between">
+                                <td>hobíci</td><td class="text-right">1000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>žáci</td><td class="text-right">2000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>dorostenci</td><td class="text-right">2000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>junioři</td><td class="text-right">2000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>ženy</td><td class="text-right">2000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>muži</td><td class="text-right">2000 kč</td>
+                            </tr>
+                            <tr>
+                                <td>další člen rodiny</td><td class="text-right">1000 kč</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-<head>
-	<meta charset="utf-8">
-	<title>Carousel demo</title>
-  <link rel="stylesheet" href="css/style.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-
-<body>
-  <div class="carousel">
-		<div class="carousel-nav">
-			<span class="change-carousel active" data-value="1"></span>
-			<span class="change-carousel" data-value="2"></span>
-			<span class="change-carousel" data-value="3"></span>
-			<span class="change-carousel" data-value="4"></span>
-    </div>
-		<div class="carousel-move">
-			<div class="change-carousel prev" data-value="4"></div> <!-- NATVRDO ZADANÝ POČET -->
-		  <div class="change-carousel next" data-value="2"></div>
-		</div>
-		<div class="carousel-items">
-			<div class="carousel-item active">
-				<a href="http://example.com/2">
-          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
-          <div class="carousel__description">
-            Banner description 1
-          </div>
-        </a>
-			</div>
-			<div class="carousel-item">
-				<a href="http://example.com">
-          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
-          <div class="carousel__description">
-            Banner description 2
-          </div>
-        </a>
-			</div>
-			<div class="carousel-item">
-				<a href="http://example.com">
-          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
-          <div class="carousel__description">
-            Banner description 3
-          </div>
-        </a>
-			</div>
-			<div class="carousel-item">
-				<a href="http://example.com">
-          <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Banner name">
-          <div class="carousel__description">
-            Banner description 4
-          </div>
-        </a>
-			</div>
-		</div>
-  </div>
-
-	<script src="js/app.js"></script>
-
-</body>
-
+        </main>
+        <script type="text/javascript">
+            document.getElementsByClassName("mobile-menu-open")[0].addEventListener("click", function(){
+                document.getElementsByClassName("mobile-menu")[0].classList.add("mobile-menu-show");
+            });
+            document.getElementsByClassName("mobile-menu-close")[0].addEventListener("click", function(){
+                document.getElementsByClassName("mobile-menu")[0].classList.remove("mobile-menu-show");
+            });
+        </script>
+    </body>
 </html>
